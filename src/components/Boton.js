@@ -1,7 +1,5 @@
-
 import React, { useState } from 'react';
 import './App.css';
-
 
 function App() {
   const [metas, setMetas] = useState([]);
@@ -39,9 +37,9 @@ function App() {
           <li key={index}>
             {meta.tarea}
             {!meta.completa && (
-              <button onClick={() => marcarCompleta(index)}>completadas: <img src='images/check-circle 1.png'></img> </button>
+              <button onClick={() => marcarCompleta(index)}>Marcar Completa</button>
             )}
-            <button onClick={() => eliminarMeta(index)}>Eliminar <img src='images/trash 1.png'></img></button>
+            <button onClick={() => eliminarMeta(index)}>Eliminar</button>
           </li>
         ))}
       </ul>
